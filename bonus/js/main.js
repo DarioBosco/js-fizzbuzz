@@ -2,6 +2,9 @@
 
 var iterations = 100;
 
+const para = document.createElement('p');
+const node = document.createTextNode('This is a new paragraph.');
+
 for (let i = 0; i < iterations; i++) {
 	var element = i + 1;
 	//Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
@@ -14,5 +17,8 @@ for (let i = 0; i < iterations; i++) {
 		element = 'Buzz';
 	}
 
-	console.log(element);
+	//Inserisco il valore degli elementi in dei div per poter stilizzarli con CSS
+	var e = document.createElement('div');
+	e.innerHTML = element;
+	document.body.appendChild(e);
 }
