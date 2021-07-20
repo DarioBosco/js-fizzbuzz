@@ -12,7 +12,7 @@ for (let i = 0; i < iterations; i++) {
 		element = 'Fizz';
 	} else if (element % 5 == 0) {
 		element = 'Buzz';
+	} else {
+		console.log(element);
 	}
-
-	console.log(element);
 }
